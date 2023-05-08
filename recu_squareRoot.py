@@ -20,4 +20,4 @@ def sqrt(a):
         
         
         
-print(sqrt(1002))
+print(sqrt(144))
