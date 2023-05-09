@@ -6,15 +6,20 @@ def desc(num):
     for i in range(0, ln):
         a.append(digits[i])
     
-    pivot = a[3]
-    for i in range(ln):
-        for j in range(ln):
-           #print(a[j], a[i]) 
-           if a[i]>a[j]:
-               a.pop(j)
-               print(a[i])
+    return a
+
+def sorting(num):
+    arr = desc(num)
+    if len(arr)<= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        lesser = [i for i in arr[1:] if i <= pivot]
+        greater = [i for i in arr[1:] if i > pivot]
+        
+        return sorting(greater) + [pivot] + sorting(lesser)
     
-    
-    
-    
-print(desc(1238396))
+
+
+print(sorting(1213))
+
