@@ -1,16 +1,6 @@
-def desc(num):
-    digits = str(num)
-    ln = len(digits)
-    a = []
-    sorted = []
-    for i in range(0, ln):
-        a.append(digits[i])
-    
-    return a
-
 def sorting(num):
-    arr = desc(num)
-    if len(arr)<= 1:
+    arr = num
+    if len(arr)< 1:
         return arr
     else:
         pivot = arr[0]
@@ -21,5 +11,5 @@ def sorting(num):
     
 
 
-print(sorting(1213))
+print(sorting([1,2,1,3]))
 
