@@ -7,9 +7,9 @@ def sorting(num):
         lesser = [i for i in arr[1:] if i <= pivot]
         greater = [i for i in arr[1:] if i > pivot]
         
-        return sorting(greater) + [pivot] + sorting(lesser)
+        return sorting(lesser) + [pivot] + sorting(greater)
     
 
 
-print(sorting([1,2,1,3]))
+print(sorting([9,2,3,4,5,7,8,9,6]))
 
