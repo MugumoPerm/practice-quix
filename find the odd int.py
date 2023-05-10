@@ -7,19 +7,28 @@
 def find_it(seq):
     #find the length of the array
     ln = len(seq)
-    
+    number_count = []
     #create a loop to find the count of each element in the array
-  
     for i in range(ln):
+        #get the count of the array
         count = seq.count(seq[i])
+        #find the modulus of 2 to the count to get the odd number
+        if count % 2 == 1:
+            odd = seq[i]
+            
+            #append all the odd numbers to get the length of appended array
+            number_count.append(seq[i])
+    #if the length of the appended is greater than zero return the odd number 
+    if   len(number_count) > 0:
         
-        if count%2 != 0 :
-            print(seq[i])
+        return odd
+    #else return none
+    else:
+        return None
     
-    
-    
-    return None
 
 
+    
 
-find_it([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5])
+
+print(find_it([1,1,1,1,1,2,2,2,1,1,1,5,5,5,1,1]))
