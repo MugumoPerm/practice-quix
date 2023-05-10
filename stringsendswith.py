@@ -7,7 +7,7 @@ def solution():
     
     #define the variable name
     name = 'fail'
-    word = 'al'
+    word = 'ail'
 
     # get the length
     ln = len(name)
