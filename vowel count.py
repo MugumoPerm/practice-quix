@@ -27,4 +27,4 @@ def get_count(sentence):
 
 
 
-print(get_count(''))
+print(get_count('perminus'))

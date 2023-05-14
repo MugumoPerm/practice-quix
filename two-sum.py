@@ -12,4 +12,4 @@ def two_sum(numbers, target):
                     return ([i, j])
     
     
-print(two_sum((2,1,3,1,3,5,7,7,8,3,6,8,3,2,2,1,4), 9))
+print(two_sum((2,1,3,1,3,5,7,7,8,3,6,8,3,2,2,1,4), 5))
