@@ -12,6 +12,8 @@ def xo(s):
     #declare a count variable of x and y
     countx = 0
     counto = 0
+    if s == '' or ' ':
+        return None
     
     #check whether s has any of the x or o
     for i in range(ln):
@@ -27,4 +29,4 @@ def xo(s):
         return False
     
     
-print(xo('Xoxoxoxoxoxoxo'))
+print(xo(''))
