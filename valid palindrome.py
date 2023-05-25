@@ -1,6 +1,5 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        # variables
         s = s.lower()
         length = len(s)
         clean = []

@@ -8,7 +8,7 @@ class Solution:
         while left < right:
             curr_sum = nums[left] + nums[right]
             if curr_sum == target:
-                return ([nums[left], nums[right]]), ([left, right]) # Found the pair, return the indices
+                return ([left, right]) # Found the pair, return the indices
             elif curr_sum < target:
                 left += 1  # Move the left pointer to the right
             else:
@@ -21,6 +21,6 @@ class Solution:
 
 
 
-nums = [4,1,2,23,4,5,4,675,7,4,3,2,2,3,4,6,75,7,3,1]
+nums = [2,7,11,15]
 twosum = Solution()
-print(twosum.twoSum(nums,target=40))
+print(twosum.twoSum(nums,target=9))
