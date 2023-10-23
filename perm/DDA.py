@@ -7,7 +7,7 @@ def DDA(x1, x2, y1, y2):
        step = dx
    else:
         step = dy
-   print(step)
+   # print(step)
    
    # Calculate the y and x increment
    y_inc = dy/step
@@ -18,11 +18,12 @@ def DDA(x1, x2, y1, y2):
         x1 += x_inc
         y1 += y_inc
 
-        #print the results and round them to the nearest whole number
+        # print the results and round them to the nearest whole number
         print(round(x1), round(y1))
 
 # Get the two points
-x1,y1 = (5,6)
-x2,y2 = (30,28)
+x1,y1 = (20, 10)
+
+x2,y2 = (30, 18)
 
 DDA(x1, x2, y1, y2)
