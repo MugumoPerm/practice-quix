@@ -17,7 +17,9 @@ def DDA(x1, x2, y1, y2):
    for i in range(step):
         x1 += x_inc
         y1 += y_inc
-        print(x1, y1)
+
+        #print the results and round them to the nearest whole number
+        print(round(x1), round(y1))
 
 # Get the two points
 x1,y1 = (5,6)
